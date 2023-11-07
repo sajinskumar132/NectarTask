@@ -99,7 +99,7 @@ function LocationForm() {
         />
         <div className=' flex justify-end gap-5 mt-5'>
           <button type='submit' className='bg-blue-500 text-white px-5 py-1 rounded'>
-            Add Location
+            {Isedit?"Update Location":"Add Location"}
           </button>
           <button type='submit' className=' border border-blue-500 px-5 py-1 rounded' onClick={() => {
             dispatch(ClearNickname())

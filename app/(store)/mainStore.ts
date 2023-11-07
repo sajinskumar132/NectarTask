@@ -53,7 +53,7 @@ const MapSlice = createSlice({
             state.isEdit = true
         },
         UpdateLocation: (state, action) => {
-            state.Location[state.SelectedIndex] = action.payload
+            state.Locations[state.SelectedIndex] = action.payload
         },
         ClearNickname: (state) => {
             state.Location.nickname = ""
